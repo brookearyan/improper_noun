@@ -30,8 +30,7 @@ class HaikuForm extends Component {
             <input
               type="text"
               onChange={this.handleOnChange}
-              alias="alias"
-              value={alias}
+              name="alias"
             />
           </div>
           <div>
@@ -39,7 +38,6 @@ class HaikuForm extends Component {
               type="string"
               onChange={this.handleOnChange}
               name="noun_one"
-              value={noun_one}
             />
           </div>
           <div>
@@ -47,7 +45,6 @@ class HaikuForm extends Component {
               type="string"
               onChange={this.handleOnChange}
               name="noun_two"
-              value={noun_two}
             />
           </div>
           <div>
@@ -55,7 +52,6 @@ class HaikuForm extends Component {
               type="string"
               onChange={this.handleOnChange}
               name="noun_three"
-              value={noun_three}
             />
           </div>
           <div>
@@ -63,7 +59,6 @@ class HaikuForm extends Component {
               type="string"
               onChange={this.handleOnChange}
               name="noun_four"
-              value={noun_four}
             />
           </div>
           <div>
@@ -71,7 +66,6 @@ class HaikuForm extends Component {
               type="string"
               onChange={this.handleOnChange}
               name="noun_five"
-              value={noun_five}
             />
           </div>
 
