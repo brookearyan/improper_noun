@@ -9,3 +9,4 @@ export const resetHaikuForm = () => {
   return {
     type: 'RESET_HAIKU_FORM'
   }
+}

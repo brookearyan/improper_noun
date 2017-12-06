@@ -7,7 +7,7 @@ import { createHaiku } from '../actions/haikus';
 class HaikuForm extends Component {
 
   handleOnChange = event => {
-    const { name, value } = event.target;
+    const { alias, value } = event.target;
     const currentHaikuFormData = Object.assign({}, this.props.haikuFormData, {
       [alias]: value
     })
