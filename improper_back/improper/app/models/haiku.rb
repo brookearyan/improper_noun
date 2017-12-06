@@ -1,3 +1,0 @@
-class Haiku < ApplicationRecord
-  
-end
