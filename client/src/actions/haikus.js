@@ -22,7 +22,7 @@ export const getHaikus = () => {
   return dispatch => {
     return fetch(`${API_URL}/haikus`)
       .then(response => response.json())
-      .then(haikus => dispatch(setHaikus(haikus)))
+      .then(haikus => dispatch(getHaikus(haikus)))
       .catch(error => console.log(error));
   }
 }

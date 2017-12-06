@@ -6,16 +6,16 @@ import { createHaiku } from '../actions/haikus';
 
 class HaikuForm extends Component {
 
-  handleOnChange = event => {
-    const { alias, value } = event.target;
+  handleOnChange = ev => {
+    const { alias, value } = ev.target;
     const currentHaikuFormData = Object.assign({}, this.props.haikuFormData, {
       [alias]: value
     })
     this.props.updateHaikuFormData(currentHaikuFormData)
   }
 
-  handleOnSubmit = event => {
-    event.preventDefault()
+  handleOnSubmit = ev => {
+    ev.preventDefault()
     this.props.createHaiku(this.props.haikuFormData)
   }
 

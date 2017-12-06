@@ -1,12 +1,13 @@
+
 import {
   createStore,
   applyMiddleware,
   combineReducers
 } from 'redux';
 import thunk from 'redux-thunk';
-
 import haikus from './reducers/haikus';
 import haikuFormData from './reducers/haikuFormData';
+
 
 const reducers = combineReducers({
   haikus,
